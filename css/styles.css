@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1C1C1E;
+}
+
+header{
+    text-align: center;
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    hgroup{
+        padding-top: 2rem;
+        h1{
+            font-size: 4.6rem;
+            line-height: 4.2rem;
+        }
+        h2{
+            font-weight: lighter;
+            font-size: 2rem;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 12rem);
+    padding: 1rem 3rem 4rem;
+    gap: 1.6rem;
+}
+
+article{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 3.2rem;
+    color: #ffffff;
+    border-radius: .8rem;
+    .title{
+        display: flex;
+        font-size: 2rem;
+    }
+    .counter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        font-size: 4rem;
+        justify-self: flex-end;
+        button{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100rem;
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+            color: #ffffff;
+        }
+    }
+}
+
+.counter__coin{
+    background-color: #FFD63A
+    ;
+}
+
+.counter__damage{
+    background-color: #FF0B55;
+}
+
+.counter__magic{
+    background-color: #3D90D7;
+}
+
+.counter__victory{
+    background-color: #7C4585;
+}
+
+footer{
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
