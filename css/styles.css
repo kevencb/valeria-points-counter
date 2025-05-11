@@ -45,16 +45,17 @@ main{
 }
 
 article{
-    height: 25%;
+    height: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1.6rem 3.2rem;
+    padding: 2.4rem 3.2rem;
     color: #ffffff;
     border-radius: .8rem;
     .title{
-        display: flex;
-        font-size: 1.6rem;
+        h2{
+            font-size: 2rem;
+        }
     }
     .counter{
         display: flex;
