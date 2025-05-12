@@ -35,3 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setupCounter(btn_more_magic, btn_less_magic, counter_magic);
     setupCounter(btn_more_victory, btn_less_victory, counter_victory);
 });
+
+
+let lastTouchEnd = 0;
+
+document.addEventListener('touchend', (event) => {
+    const now = new Date().getTime();
+    if (now - lastTouchEnd <= 300) {
+        event.preventDefault(); // previene zoom en doble tap
+    }
+    lastTouchEnd = now;
+}, false);
