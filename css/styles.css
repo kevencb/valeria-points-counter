@@ -77,16 +77,22 @@ article{
             background: none;
             border: none;
             color: #ffffff;
+            cursor: pointer;
         }
+
+    }
+    :disabled{
+        opacity: 0;
     }
 }
+
 
 .counter__coin{
     background-color: #FFD63A
     ;
 }
 
-.counter__damage{
+.counter__strength{
     background-color: #FF0B55;
 }
 
